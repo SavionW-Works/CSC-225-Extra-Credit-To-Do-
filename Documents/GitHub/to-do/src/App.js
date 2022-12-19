@@ -94,8 +94,8 @@ function App() {
       <div class="container text-center p-4"> 
       <h1 class="bg-success text-light p-3 display-3"> List Maker!</h1> 
       
-      <div class="row justify-content-center">
-        <div class="text-start">   
+      <div className="row justify-content-center">
+        <div className="text-start">   
         <div className="container text-center">
                 <div className="row justify-content-center">
                     

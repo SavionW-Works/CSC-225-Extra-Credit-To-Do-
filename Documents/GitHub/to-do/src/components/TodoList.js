@@ -22,22 +22,22 @@ const TodoList = (props) => {
         props.target(props.title);
     } 
     
-    var num = -1;
+    // var num = -1;
 
-    return props.todoList.map(item => {
+    return props.todoList.map((item, index) => {
         
          
-        num++
+        // num++
         
         console.log(item);
-        return <> 
+        return <div key={index}> 
 
-            <div className="container">
+            <div className="container" >
                 <div className="row justify-content-center text-center">
                     
                     <div class="d-flex col"> 
 
-                        <p class="list-group-item pe-5 me-4 fs-3" key={num}> #{num} </p> 
+                        <p class="list-group-item pe-5 me-4 fs-3" > #{index} </p> 
                         <p class="list-group-item pe-5 me-4 fs-3">{item.title} </p> 
 
                         {/* <button class="btn-lg btn-danger py-2 px-3 h-25 mx-1 fs-3" type="submit" onClick={removeItem}>X</button>  
@@ -49,7 +49,7 @@ const TodoList = (props) => {
            
                            
 
-        </> 
+        </div> 
      
      
     }); 
